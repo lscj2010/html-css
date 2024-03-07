@@ -26,11 +26,11 @@ header > h1 {
     position: absolute;
     margin: 29px 0 0 15px;
 }
-header nav {
+header menu {
     position: absolute;
     margin: 40px 0 0 300px;
 }
-header nav a {
+header menu a {
     text-decoration: none;
     color: var(--cor-fonte-preta);
     background-color: var(--cor-do-menu);
@@ -39,7 +39,7 @@ header nav a {
     padding: 10px;
     border-radius: 5px;
 }
-header nav a:hover {
+header menu a:hover {
     border: 1px solid var(--cor-do-menu);
     background-color: var(--cor-de-fundo);
 }
@@ -72,7 +72,7 @@ div i.bxl-whatsapp {
     margin: 38px 0 0 840px;
 }
 @media only screen and (max-width: 1110px) {
-    header nav {
+    header menu {
         margin: 40px 0 0 230px;
     }
     div a.instagram {
@@ -95,7 +95,7 @@ div i.bxl-whatsapp {
     header h1 {
         font-size: 1.5em;
     }
-    header nav {
+    header menu {
         margin: 34px 0 0 180px;
     }
     div a.instagram {
@@ -112,11 +112,11 @@ div i.bxl-whatsapp {
     }
 }
 @media only screen and (max-width: 940px) {
-    header nav {
+    header menu {
         position: absolute;
         margin: 82px 0 0 0;
     }
-    header nav a {
+    header menu a {
         display: block;
         margin: 1px;
     }
@@ -140,11 +140,11 @@ div i.bxl-whatsapp {
     header h1 {
         font-size: 1.2em;
         margin: 15px 0 0 5px;
-    }header nav {
+    }header menu {
         position: absolute;
         margin: 52px 0 0 0;
     }
-    header nav a {
+    header menu a {
         display: block;
         margin: 1px;
     }
