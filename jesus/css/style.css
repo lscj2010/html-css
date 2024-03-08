@@ -92,3 +92,30 @@ header .social-icons .whatsapp {
         margin: 32px 0 0 0;
     }
 }
+@media only screen and (max-width: 830px) {
+    header {
+        height: 80px;
+    }
+    header h1 {
+        font-size: 1.4em;
+    }
+    header menu ul {
+        margin: 32px 0 0 180px;
+    }
+    header div.social-icons i.bxl-instagram {
+        font-size: 1.2em;
+        margin: 32px 0 0 0;
+    }
+    header .social-icons .instagram {
+        font-size: 1em;
+        margin: 26px 0 0 0;
+    }
+    header .social-icons i.bxl-whatsapp {
+        font-size: 1.2em;
+        margin: 32px 0 0 0;
+    }
+    header .social-icons .whatsapp {
+        font-size: 1em;
+        margin: 26px 0 0 0;
+    }
+}
