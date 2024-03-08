@@ -73,6 +73,22 @@ header .social-icons .whatsapp {
     padding: 8px;
     margin: 30px 0 0 0;
 }
-@media only screen and (max-width: 580px) {
-    
+@media only screen and (max-width: 950px) {
+    header menu ul li a {
+        font-size: .6em;
+    }
+    header div.social-icons i.bxl-instagram {
+        font-size: 1.5em;
+        margin: 38px 0 0 0;
+    }
+    header .social-icons .instagram {
+        margin: 32px 0 0 0;
+    }
+    header .social-icons i.bxl-whatsapp {
+        font-size: 1.5em;
+        margin: 38px 0 0 0;
+    }
+    header .social-icons .whatsapp {
+        margin: 32px 0 0 0;
+    }
 }
