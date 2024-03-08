@@ -25,143 +25,54 @@ header > h1 {
     font-family: var(--font-logo);
     position: absolute;
     margin: 29px 0 0 15px;
+    float: left;
 }
-header menu {
-    position: absolute;
-    margin: 40px 0 0 300px;
+header menu ul {
+    float: left;
+    margin: 38px 0 0 250px;
 }
-header menu a {
+header menu ul li {
+    display: inline;
+}
+header menu ul li a {
     text-decoration: none;
-    color: var(--cor-fonte-preta);
     background-color: var(--cor-do-menu);
-    font-size: 1em;
-    transition-duration: .5s;
-    padding: 10px;
+    color: var(--cor-fonte-preta);
     border-radius: 5px;
+    padding: 10px;
 }
-header menu a:hover {
-    border: 1px solid var(--cor-do-menu);
-    background-color: var(--cor-de-fundo);
+header menu ul li a:hover {
+    background-color: var(--cor-fonte-branco);
+    color: var(--cor-de-fundo);
 }
-/* configuração do instagram do cabeçalho */
-div a.instagram {
-    position: absolute;
+header div.social-icons i.bxl-instagram {
+    float: left;
+    color: var(--cor-fonte-branco);
     font-size: 2em;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 10px;
+}
+header .social-icons .instagram {
+    float: left;
+    color: var(--cor-fonte-branco);
     text-decoration: none;
-    font-family: var(--font-logo);
-    color: var(--cor-fonte-preta);
-    margin: 32px 0 0 700px;
+    padding: 8px;
+    margin: 30px 0 0 0;
 }
-div i.bxl-instagram {
-    position: absolute;
-    font-size: 1.5em;
-    margin: 38px 0 0 670px;
-}
-/* configuração do WhatsApp do cabeçalho */
-div a.whatsapp {
-    position: absolute;
+header .social-icons i.bxl-whatsapp {
+    float: left;
+    color: var(--cor-fonte-branco);
     font-size: 2em;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 10px;
+}
+header .social-icons .whatsapp {
+    float: left;
+    color: var(--cor-fonte-branco);
     text-decoration: none;
-    font-family: var(--font-logo);
-    color: var(--cor-fonte-preta);
-    margin: 32px 0 0 870px;
-}
-div i.bxl-whatsapp {
-    position: absolute;
-    font-size: 1.5em;
-    margin: 38px 0 0 840px;
-}
-@media only screen and (max-width: 1110px) {
-    header menu {
-        margin: 40px 0 0 230px;
-    }
-    div a.instagram {
-        margin: 36px 0 0 610px;
-    }
-    div i.bxl-instagram {
-        margin: 38px 0 0 580px;
-    }
-    div a.whatsapp {
-        margin: 38px 0 0 750px;
-    }
-    div i.bxl-whatsapp {
-        margin: 38px 0 0 720px;
-    }
-}
-@media only screen and (max-width: 980px) {
-    header {
-        height: 82px;
-    }
-    header h1 {
-        font-size: 1.5em;
-    }
-    header menu {
-        margin: 34px 0 0 180px;
-    }
-    div a.instagram {
-        margin: 30px 0 0 560px;
-    }
-    div i.bxl-instagram {
-        margin: 34px 0 0 530px;
-    }
-    div a.whatsapp {
-        margin: 32px 0 0 700px;
-    }
-    div i.bxl-whatsapp {
-        margin: 34px 0 0 670px;
-    }
-}
-@media only screen and (max-width: 940px) {
-    header menu {
-        position: absolute;
-        margin: 82px 0 0 0;
-    }
-    header menu a {
-        display: block;
-        margin: 1px;
-    }
-    div a.instagram {
-        margin: 24px 0 0 210px;
-    }
-    div i.bxl-instagram {
-        margin: 30px 0 0 180px;
-    }
-    div a.whatsapp {
-        margin: 24px 0 0 340px;
-    }
-    div i.bxl-whatsapp {
-        margin: 30px 0 0 310px;
-    }
+    padding: 8px;
+    margin: 30px 0 0 0;
 }
 @media only screen and (max-width: 580px) {
-    header {
-        height: 52px;
-    }
-    header h1 {
-        font-size: 1.2em;
-        margin: 15px 0 0 5px;
-    }header menu {
-        position: absolute;
-        margin: 52px 0 0 0;
-    }
-    header menu a {
-        display: block;
-        margin: 1px;
-    }
-    div a.instagram {
-        font-size: 1.2em;
-        margin: 15px 0 0 165px;
-    }
-    div i.bxl-instagram {
-        font-size: 1.2em;
-        margin: 15px 0 0 140px;
-    }
-    div a.whatsapp {
-        font-size: 1.2em;
-        margin: 15px 0 0 255px;
-    }
-    div i.bxl-whatsapp {
-        font-size: 1.2em;
-        margin: 15px 0 0 230px;
-    }
+    
 }
