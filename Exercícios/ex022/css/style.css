@@ -1,11 +1,13 @@
 @charset "UTF-8";
 :root {
+    --branco: #FFFFFF;
     --preto: #000000;
     --cinza-claro: lightgray;
+    --azul-escuro: darkblue;
     --azul: skyblue;
 }
 body {
-    background-image: url(../imagens/wallpaper001.jpg);
+    /*background-image: url(../imagens/wallpaper001.jpg);*/
     text-align: center;
 }
 div.quadrado {
@@ -62,4 +64,21 @@ body.teste1 {
     height: 98vh;
     background-image: url('../imagens/wallpaper003.jpg');
     background-position: center center;
+}
+/*exercício 006 */
+body.teste6 {
+    background-color: var(--preto);
+    background-image: url('../imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+main {
+    background-color: var(--branco);
+    width: 400px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 15px;
 }
