@@ -17,7 +17,6 @@
     --font-logo: 'Tangerine';
 }
 header {
-    float: left;
     background-color: var(--cor-de-fundo);
     height: 100px;
     width: auto;
