@@ -5,6 +5,8 @@
     --cinza-claro: lightgray;
     --azul-escuro: darkblue;
     --azul: skyblue;
+    --rosa: purple;
+    --amarelo: yellow;
 }
 body {
     /*background-image: url(../imagens/wallpaper001.jpg);*/
@@ -67,18 +69,44 @@ body.teste1 {
 }
 /*exercício 006 */
 body.teste6 {
-    background-color: var(--preto);
+    /*background-color: var(--preto);
     background-image: url('../imagens/wallpaper002.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
+    /* Shorthand - background 
+    Color > image > position > repeat > [size não entra na shorthand] */
+    background: var(--preto) url('../imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 main {
     background-color: var(--branco);
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     text-align: justify;
     margin: auto;
     border: 1px solid var(--azul-escuro);
     border-radius: 15px;
+}
+/* início do exercício 07 */
+section#container {
+    background-image: url('../imagens/target001.png');
+    background-size: 100% 100%;
+
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: var(--rosa);
+}
+article#conteudo {
+    background-image: url('../imagens/target001.png');
+    background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: var(--amarelo);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
