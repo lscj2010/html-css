@@ -25,3 +25,41 @@ div#q2 {
 div#q3 {
     background-image: url('../imagens/pattern003.png');
 }
+/* início do exercício 2 */
+body.teste2 {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+}
+/* início do exercício 3 */
+div.bloco {
+    background-image: url('../imagens/wallpaper003.jpg');
+    height: 200px;
+    border: 1px solid var(--preto);
+    border-radius: 20px;
+    margin: 10px;
+}
+div#qu1 {
+    background-position: left top;
+}
+div#qu2 {
+    background-position: left center;
+}
+div#qu3 {
+    background-position: right bottom;
+}
+/* exercício 006 */
+body.teste {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 100px 100px;
+    height: 98vh;
+    border: 1px dashed var(--preto);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+/* exercício 005 */
+body.teste1 {
+    height: 98vh;
+    background-image: url('../imagens/wallpaper003.jpg');
+    background-position: center center;
+}
