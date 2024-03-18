@@ -51,3 +51,10 @@ tfoot {
     background-color: var(--gray);
     color: var(--branco);
 }
+.tabela002 caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--gray);
+    color: var(--branco);
+    padding: 10px;
+}
