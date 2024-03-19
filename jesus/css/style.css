@@ -16,11 +16,25 @@
     --cor-do-menu: #e79fb1ea;
     --font-logo: 'Tangerine';
 }
-header {
-    background-color: var(--cor-de-fundo);
-    height: 100px;
-    width: auto;
+a {
+    color: var(--cor-fonte-preta);
+    text-decoration: none;
+    font-family: sans-serif;
 }
+#logo {
+    font-size: 2em;
+    font-family: var(--font-logo);
+    font-weight: bold;
+}
+#header {
+    display: flex;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+/*https://www.youtube.com/watch?v=DnODupiIAiE
 header > h1 {
     font-family: var(--font-logo);
     position: absolute;
