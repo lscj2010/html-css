@@ -73,15 +73,24 @@ a {
         width: 20px;
     }
     #hamburger::after, #hamburger::before {
+        position: relative;
         content: '';
         display: block;
         background: currentColor;
+        transition: .3s;
         width: 20px;
         height: 2px;
         margin: 5px 0 0 0;
     }
     #nav.active #hamburger {
-        background: blue;
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
     }
     #menu {
         display: block;
