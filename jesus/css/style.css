@@ -6,6 +6,7 @@
     font-weight: normal;
 }
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -121,6 +122,9 @@ a {
     }
 }
 /* Início do destaques */
+.destaques {
+    
+}
 .produtos .imagem {
     width: 140px;
     height: 140px;
@@ -130,4 +134,5 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
