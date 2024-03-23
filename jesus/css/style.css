@@ -11,7 +11,8 @@
 }
 :root {
     --cor-fonte-branco: #ffffff;
-    --cor-fonte-preta: #000000; 
+    --cor-fonte-preta: #000000;
+    --cor-font-clara: #181717; 
     --cor-de-fundo: #FFC0CB;
     --cor-do-menu: #e79fb1ea;
     --font-logo: 'Tangerine';
@@ -120,18 +121,58 @@ a {
     }
 }
 /* Início do destaques */
-main .slide-container {
+.destaque {
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-de-fundo);
 }
-.slide-cotent {
-    margin: 0 40px;
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: var(--cor-do-menu);
+    padding: 10px;
+}
+.slide-content {
+    margin: 40px;
 }
 .card {
+    width: 320px;
     border-radius: 25px;
+    background-color: var(--cor-fonte-branco);
+}
+.image-content, .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-font-clara);
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before, .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor-font-clara);
+}
+.overlay::after {
+    border-radius: 0 25px 0 0;
     background-color: var(--cor-fonte-branco);
 }
 .card-image {
@@ -148,4 +189,30 @@ main .slide-container {
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid var(--cor-do-menu);
+}
+.name {
+    font-family: var(--font-logo);
+    font-size: 3em;
+    font-weight: 500;
+    color: var(--cor-fonte-preta);
+}
+.description {
+    font-size: 1em;
+    color: var(--cor-fonte-preta);
+    text-align: justify;
+}
+.button {
+    border: none;
+    font-size: 1em;
+    color: var(--cor-fonte-branco);
+    padding: 8px 16px;
+    background-color: var(--cor-do-menu);
+    border-radius: 5px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover {
+    background: var(--cor-de-fundo);
+    color: var(--cor-font-clara);
 }
