@@ -122,8 +122,12 @@ a {
     }
 }
 /* Início do destaques */
-.destaques {
-    
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-de-fundo);
 }
 .produtos .imagem {
     width: 140px;
