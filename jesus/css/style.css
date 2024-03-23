@@ -126,7 +126,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: var(--cor-de-fundo);
 }
 .produtos .imagem {
@@ -139,4 +139,80 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+.produtos {
+    position: relative;
+    background-color: var(--cor-fonte-preta);
+    border: 3px solid #0ef;
+    border-radius: 20px;
+    width: 280px;
+}
+.produtos .produtos-conteiner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.produtos .midia-social {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos .midia-social i {
+    color: var(--cor-fonte-branco);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.produtos .midia-social i:hover {
+    color: #0ef;
+}
+.produtos .nome-produto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: var(--cor-fonte-branco);
+}
+.nome-produto .nome {
+    font-size: 1em;
+    font-weight: 600;
+}
+.nome-produto .terco {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.produtos .avaliacao {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.produtos .avaliacao i {
+    font-size: 1.5em;
+    color: #0ef;
+    margin: 0 2px;
+}
+.produtos .botao {
+    display: flex;
+    justify-content: space-around;
+    width: 110%;
+    margin-top: 20px;
+}
+.produtos .botao button {
+    background: #0ef;
+    border: none;
+    color: var(--cor-fonte-preta);
+    font-weight: 600;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+.produtos .botao button:hover {
+    background: var(--cor-fonte-branco);
 }
